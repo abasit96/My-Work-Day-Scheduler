@@ -2,6 +2,14 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(function () {
+  var timeBlock = document.getElementsByClassName("time-block");
+for (var i = 0; i < timeBlock.length; i++) {
+if (currentHour == currentHour) {
+   document.body.style.background = "past";
+} else {
+    document.body.style.background = "present";
+}
+}
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
@@ -21,3 +29,31 @@ $(function () {
   //
   // TODO: Add code to display the current date in the header of the page.
 });
+const date = new Date();
+        let hours = date.getHours();
+        const currentHour = hours;
+        console.log(currentHour);
+        
+        let ampm = 'AM';
+        if ( hours >= 12 ) {
+            ampm = 'PM';
+        }
+
+        hours = hours % 12;
+        let counter = 0; // 1 2
+
+        for ( x = 0; x < 9; x++ ) {
+            
+            
+            if ( hours + counter == 12 ) {
+                ampm = "AM";
+            }
+
+            if ( hours + counter > 12 ) {
+                hours = 1;
+                counter = 0;
+            }
+
+            console.log(hours + counter, ampm);
+            counter++;
+        }
