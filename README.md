@@ -3,7 +3,7 @@ A simple calendar application that allows a user to save events for each hour of
 
 ## Deployed Application
 
-View at: 
+View at:  https://abasit96.github.io/My-Work-Day-Scheduler/
 
 
 ## Requirements

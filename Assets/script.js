@@ -1,5 +1,6 @@
 $(document).ready(function () {
   $(".saveBtn").on("click", function () {
+    console.log(this);
     var value = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id");
 
@@ -7,25 +8,31 @@ $(document).ready(function () {
   });
   $("#displayCurrentDay").text(dayjs().format("dddd, MMMM Do"));
   $(function () {
-    var currentHour = dayjs().hour();
+    // var currentHour = dayjs().hour();
+    var currentHour = 11
     var timeBlock = document.getElementsByClassName("time-block");
     for (var i = 0; i < timeBlock.length; i++) {
+      console.log(currentHour)
+      console.log(timeBlock[i].getAttribute('id'))
       if (currentHour == Number.parseInt(timeBlock[i].getAttribute('id'))) {
         timeBlock[i].classList.add("present");
-      } else {
-        timeBlock[i].classList.add("past");
+      } else if (currentHour < Number.parseInt(timeBlock[i].getAttribute('id'))) {
+        timeBlock[i].classList.add("future")
       }
-    }
+      else {
+        timeBlock[i].classList.add("past");
+      } 
+    };
     function hourUpdater() {
     };
-    $("#hour9 .description").val(localStorage.getItem("hour9"));
-    $("#hour10 .description").val(localStorage.getItem("hour10"));
-    $("#hour11 .description").val(localStorage.getItem("hour11"));
-    $("#hour12 .description").val(localStorage.getItem("hour12"));
-    $("#hour1 .description").val(localStorage.getItem("hour1"));
-    $("#hour2 .description").val(localStorage.getItem("hour2"));
-    $("#hour3 .description").val(localStorage.getItem("hour3"));
-    $("#hour4 .description").val(localStorage.getItem("hour4"));
-    $("#hour5 .description").val(localStorage.getItem("hour5"));
+    $("#9 .description").val(localStorage.getItem("9"));
+    $("#10 .description").val(localStorage.getItem("10"));
+    $("#11 .description").val(localStorage.getItem("11"));
+    $("#12 .description").val(localStorage.getItem("12"));
+    $("#13 .description").val(localStorage.getItem("13"));
+    $("#14 .description").val(localStorage.getItem("14"));
+    $("#15 .description").val(localStorage.getItem("15"));
+    $("#16 .description").val(localStorage.getItem("16"));
+    $("#17 .description").val(localStorage.getItem("17"));
   })
 });
