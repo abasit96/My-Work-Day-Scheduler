@@ -3,25 +3,8 @@ A simple calendar application that allows a user to save events for each hour of
 
 ## Deployed Application
 
-View at: https://tiffany-brand.github.io/work-day-timeblock-planner/
+View at: 
 
-## Table of Contents
-
-1. [Description](#Description)
-2. [Technologies](#technologies)
-3. [Requirements](#Requirements)
-4. [Screenshots](#Screenshots)
-5. [Contact](#Contact)
-6. [License](#License)
-
-
-
-## Technologies
-- HTML
-- CSS
-- JavaScript
-- Bootstrap - https://getbootstrap.com/
-- Moment JS - https://momentjs.com/ 
 
 ## Requirements
 
@@ -52,17 +35,5 @@ THEN the saved events persist
 ```
 
 ## Screenshots
+![Screenshot](My-Work-Day-Scheduler/Assets/Scheduler.png)
 
-### Desktop
-![CalendarScreenShotBg](https://user-images.githubusercontent.com/16748389/88445715-8677cf80-cdf2-11ea-9f7b-ed5d021edf01.JPG)
-
-### Mobile
-![mobile-calendar](https://user-images.githubusercontent.com/16748389/90188622-d01c6000-dd89-11ea-8315-132d78ff4440.JPG)
-
-## Contact
-
-- [Tiffany Brand](https://github.com/tiffany-brand)
-
-## License
-
-[MIT License](./LICENSE)

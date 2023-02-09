@@ -11,9 +11,9 @@ $(document).ready(function () {
     var timeBlock = document.getElementsByClassName("time-block");
     for (var i = 0; i < timeBlock.length; i++) {
       if (currentHour == Number.parseInt(timeBlock[i].getAttribute('id'))) {
-        timeBlock[i].classList.add("past");
-      } else {
         timeBlock[i].classList.add("present");
+      } else {
+        timeBlock[i].classList.add("past");
       }
     }
     function hourUpdater() {
