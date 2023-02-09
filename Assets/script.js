@@ -8,8 +8,7 @@ $(document).ready(function () {
   });
   $("#displayCurrentDay").text(dayjs().format("dddd, MMMM Do"));
   $(function () {
-    // var currentHour = dayjs().hour();
-    var currentHour = 11
+    var currentHour = dayjs().hour();
     var timeBlock = document.getElementsByClassName("time-block");
     for (var i = 0; i < timeBlock.length; i++) {
       console.log(currentHour)
