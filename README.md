@@ -35,5 +35,5 @@ THEN the saved events persist
 ```
 
 ## Screenshots
-![Screenshot](Scheduler.png)
+![Screenshot](My-Work-Day-Scheduler/Assets/Scheduler.png)
 
